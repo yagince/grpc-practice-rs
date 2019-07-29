@@ -10,3 +10,7 @@ message Request {
 message Response {
   string message = 1;
 }
+
+service Helloworld {
+  rpc Call (Request) returns (Response);
+}

@@ -1,13 +1,16 @@
 [package]
-name = "grpc_practice_rs"
+name = "grpc_practice"
 version = "0.1.0"
 authors = ["yagince <straitwalk@gmail.com>"]
 edition = "2018"
 
 [dependencies]
-grpcio = "0.4.4"
+grpcio = "0.5.0-alpha.3"
 protobuf = "2.8.0"
 futures = "0.1.28"
+log = "*"
+env_logger = "*"
 
 [build-dependencies]
-protoc-rust-grpc = "0.6.1"
+grpcio-compiler = "0.5.0-alpha.2"
+which = "2.0.1"
