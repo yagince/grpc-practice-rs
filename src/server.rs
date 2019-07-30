@@ -14,6 +14,8 @@ impl helloworld_grpc::Helloworld for Server {
         req: helloworld::Request,
         sink: UnarySink<helloworld::Response>,
     ) {
+        debug!("{:#?}", &req);
+
         let mut res = helloworld::Response::default();
         res.set_message(format!(
             "Hello name: {} age: {}",

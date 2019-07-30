@@ -8,7 +8,7 @@ use grpcio::{Environment, ServerBuilder};
 use log::*;
 
 fn main() {
-    std::env::set_var("RUST_LOG", "server=info");
+    std::env::set_var("RUST_LOG", "server=info,grpc_practice=debug");
     env_logger::init();
 
     let env = Arc::new(Environment::new(1));
